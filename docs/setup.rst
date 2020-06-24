@@ -261,23 +261,19 @@ Setting up our interaction in a Docker container
         docker-compose version
 
 
-5. Setup the docker container:
+5. Setup the docker container::
+
+    bash ~/cordial-docker/docker/run.sh
 
     .. note::
 
         The first time that you run the Docker script, it will take around 15 minutes (depending on your internet) to setup the container.  After that, it will be fast.  Feel free to take a break or go get coffee :-)
 
-    a. Open the :code:`Dockerfile` with :code:`nano ~/cordial-docker/docker/Dockerfile` and replace the name of the Amazon Web Services bucket. The line to change is at the bottom of the file and should be changed to :code:`ENV AWS_BUCKET_NAME <your aws bucket's name>` with whatever your bucket is named, for example, :code:`ENV AWS_BUCKET_NAME qt-robot-1`.
-
-    b. Run the :code:`run.sh` script with the :code:`setup` option::
-
-        bash ~/cordial-docker/docker/run.sh terminal
-
     .. note::
 
         I did have an error occur during this command one of the times I was setting it up.  It might have been a network issue.  I ran it again and it succeeded.  If you have trouble here let me know.
 
-    c. Configure your AWS credentials by typing :code:`aws configure` in the terminal.
+6. Configure your AWS credentials by typing :code:`aws configure` in the terminal that pops up.
 
 
 Setting up remote access to QT
