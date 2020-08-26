@@ -1,5 +1,5 @@
-Setting up the ABM interaction on a QT Robot
-============================================
+Setting up Cordial
+==================
 
 Contents:
 
